@@ -57,7 +57,7 @@ FDEは新しい職種で、市場規模・人数・年収の一次ソースが�
 | student | 学生キャリア支援 | agentbest/student-career |
 | **fde** | **FDE（本サイト）** | **agentbest/fde-lp** |
 
-このページのフッターには既存8本へのリンクを設置済み。**逆向き（既存8本 → fde）と、コーポレート `agentbest/agentbest-lp` の `src/components/FooterSites.astro` の `specialSites['求職者の方へ']` への追加が未実施。**公開時にまとめてやる。
+2026-08-29 に**双方向とも設置済み**：このページのフッター（→ 既存8本）、既存8本のフッター（→ fde）、コーポレート `agentbest/agentbest-lp` の `src/components/FooterSites.astro` の `specialSites['求職者の方へ']`。次に新しいLPを足すときは、この9本すべてを更新する。
 
 ⚠ 一括置換の罠: アンカーに `ft-sites-links` の文字列だけを使うと `<style>` 内のCSS定義にマッチして**ヘッダーnavに誤挿入される**。`<nav class="ft-links ft-sites-links">` のようにタグごと指定すること。
 
