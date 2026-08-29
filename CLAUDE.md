@@ -1,6 +1,6 @@
 # fde-lp — FDE（フォワードデプロイドエンジニア）LP（求職者向け）
 
-- 公開予定URL: https://fde.agent-best.net/ （GitHub Pages・HTTPS強制）※ 2026-08-29時点では**未公開・ローカルのみ**
+- 公開URL: https://fde.agent-best.net/ （GitHub Pages・HTTPS強制）2026-08-29 公開済み
 - 構成: `index.html` 1ファイル完結。CSS/JSはインライン、**外部CDNは読み込まない**。`CNAME` あり。
 
 ## ターゲットと訴求（松岡さんの指示で確定）
@@ -55,7 +55,7 @@ FDEは新しい職種で、市場規模・人数・年収の一次ソースが�
 | embedded | IoT・組込みエンジニア | agentbest/embedded-lp |
 | consultingcareerchange50 | ファーム出身者の次のキャリア（50代） | agentbest/consultingcareerchange50 |
 | student | 学生キャリア支援 | agentbest/student-career |
-| **fde** | **FDE（本サイト）** | **agentbest/fde-lp（未作成）** |
+| **fde** | **FDE（本サイト）** | **agentbest/fde-lp** |
 
 このページのフッターには既存8本へのリンクを設置済み。**逆向き（既存8本 → fde）と、コーポレート `agentbest/agentbest-lp` の `src/components/FooterSites.astro` の `specialSites['求職者の方へ']` への追加が未実施。**公開時にまとめてやる。
 
