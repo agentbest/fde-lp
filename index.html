@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>エージェントベスト｜FDE（フォワードデプロイドエンジニア）への転職</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://fde.agent-best.net/">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
@@ -102,6 +105,16 @@
   }
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
+  .brand-logo{display:block;height:34px;width:auto;flex:none}
+  /* ロゴはテーマで出し分ける（黒文字版と白文字版） */
+  .brand-logo-dark{display:none}
+  @media (prefers-color-scheme:dark){.brand-logo-light{display:none}.brand-logo-dark{display:block}}
+  :root[data-theme="dark"] .brand-logo-light{display:none}
+  :root[data-theme="dark"] .brand-logo-dark{display:block}
+  :root[data-theme="light"] .brand-logo-light{display:block}
+  :root[data-theme="light"] .brand-logo-dark{display:none}
+  .brand .brand-sub{display:block;padding-left:11px;border-left:1px solid var(--line)}
+  .brand .brand-sub small{margin:0}
   .brand .glyph{
     width:26px;height:26px;border-radius:5px;flex:none;
     background:linear-gradient(150deg,var(--accent),var(--cyan));
@@ -356,8 +369,7 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="エージェントベスト">
-      <span class="glyph">AB</span>
-      <span>AGENTBEST<small>FORWARD DEPLOYED</small></span>
+      <img class="brand-logo brand-logo-light" src="logo.png" alt="株式会社エージェントベスト" width="508" height="120"><img class="brand-logo brand-logo-dark" src="logo-white.png" alt="" aria-hidden="true" width="508" height="120">
     </a>
     <nav class="nav-links">
       <a href="#what">FDEとは</a>
@@ -866,7 +878,7 @@
       <a class="line-badge" href="https://lin.ee/RUrPtec" target="_blank" rel="noopener noreferrer" data-line-cta="fde-footer" aria-label="LINEで友だち追加する"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" width="116" height="36" loading="lazy" decoding="async"></a>
     </div>
     <div class="ft-in">
-      <div class="brand"><span class="glyph">AB</span><span>AGENTBEST<small>FORWARD DEPLOYED</small></span></div>
+      <div class="brand"><img class="brand-logo brand-logo-light" src="logo.png" alt="株式会社エージェントベスト" width="508" height="120"><img class="brand-logo brand-logo-dark" src="logo-white.png" alt="" aria-hidden="true" width="508" height="120"><span class="brand-sub"><small>FORWARD DEPLOYED</small></span></div>
       <p class="disc">
         ※ FDE（Forward Deployed Engineer／フォワードデプロイドエンジニア）は、法令や公的機関によって定義された職種名ではありません。役割の範囲・職種名の付け方は企業ごとに異なります。本ページの説明と分類は、当社が求人および面談を通じて把握している一般的な傾向を整理したものであり、特定の企業の制度を示すものではありません。企業名・ロゴは掲載していません。年収や採用結果を保証するものではありません。<br>
         © AGENTBEST. FDE（フォワードデプロイドエンジニア）への転職支援。
